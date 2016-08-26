@@ -15,6 +15,13 @@ $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
 
+//change env path
+$app->useEnvironmentPath("/var/www/html/env");
+
+//change env filename
+$app->environmentFile(".env");
+
+
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
